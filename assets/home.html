@@ -1,52 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Me</title>
 </head>
-<body>    
-  <a class="btn btn-primary" href="home.html" role="button">Back</a>
-  <div class="container py-4">
-    <!--Contact Form-->
-    <form id="contactForm">
-  
-      <!-- Name input -->
-      <div class="mb-3">
-        <label class="form-label" for="name">Name & Surname:</label>
-        <input class="form-control" id="name" type="text" placeholder="Name" />
-      </div>
-  
-      <!-- Email address input -->
-      <div class="mb-3">
-        <label class="form-label" for="emailAddress">Email Address:</label>
-        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
-      </div>
-        
-      <!-- Subject inout -->
-      <div class="mb-3">
-        <label class="form-label" for="message">Subject</label>
-        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
-      </div>
-  
-      <!-- Message input -->
-      <div class="mb-3">
-        <label class="form-label" for="message">Message</label>
-        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
-      </div>
-  
-      <!-- Form submit button -->
-      <div class="d-grid">
-        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-      </div>
-  
-    </form>
-  
-  </div>
 
-  <script src= assets/jQuery.min.js ></script>
-  <script src= assets/contact.js ></script>
+<body id="top">
+    <div style="max-width: 50%; margin-left: 2%;" class="sticky-top">
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#top">Home</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#experience">Experience</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="#contact">Contact</a>
+        </nav>
+    </div>
+    <div id="head" class="header custom-h1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="margin-left: 27%;">
+                    <img style="width: 90%; border-radius: 50%;" src="" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="margin-left: auto;">
+                    <h1 class="custom-h1">Contact</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="experience">
+        <div class="row" style="margin-top:5%; margin-bottom:2%;">
+            <h1>Experiences</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="row" style="margin-top:5%; margin-bottom:2%">
+            <h1>Contact</h1>
+        </div>
+        <form method="post" name="contact_form" action="javascript:;" onsubmit="contact()">
+            <div class="row">
+                <div class="col-6 col-12-mobilep" style="margin-bottom: 2%;">
+                    <input class="form-control" type="text" id="name" placeholder="Name" />
+                </div>
+                <div class="col-6 col-12-mobilep" style="margin-bottom: 2%;">
+                    <input class="form-control" type="email" id="email" placeholder="Email" />
+                </div>
+                <div class="col-12" style="margin-bottom: 2%;">
+                    <input class="form-control" type="text" id="subject" value="" placeholder="Subject" />
+                </div>
+                <div class="col-12" style="margin-bottom: 2%;">
+                    <textarea class="form-control" id="message" placeholder="Message" rows="6"></textarea>
+                </div>
+                <div class="col-12" style="margin-bottom: 2%;">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/contact.js"></script>
 </body>
 
 </html>
